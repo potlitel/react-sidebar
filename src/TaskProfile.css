@@ -1,0 +1,132 @@
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  /* text-align: center; */
+}
+
+.grey {
+  background: #dfe3ee;
+}
+
+.blue {
+  background: #2486dc;
+}
+
+.orange {
+  background: orange;
+}
+
+#clock {
+  font-family: "Oswald", sans-serif;
+}
+
+.green {
+  background: #11d111;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 15px;
+}
+
+#app {
+  padding: 5% 0;
+  border: 1px gray dotted;
+  font-size: 16px;
+  margin: auto 0;
+}
+
+article {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px #dfe3ee solid;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1%;
+  font-family: Helvetica;
+}
+
+.rect {
+  width: 20px;
+  height: 4px;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  border: none;
+}
+
+.fa-trash-alt {
+  float: right;
+  font-weight: 500;
+}
+
+.fa-trash-alt:hover {
+  float: right;
+  font-weight: 500;
+  color: red;
+}
+hr {
+  font-size: 4rem;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: #dfe3ee;
+}
+
+.far,
+.fas {
+  padding-right: 5%;
+  color: grey;
+}
+
+.fa-paperclip:hover {
+  color: #2486dc;
+}
+
+.fa-comment-dots:hover {
+  color: #2486dc;
+}
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+  border-radius: 1px 15px 15px 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.bubble-adder {
+  background: #ffffff;
+  border: 1px dashed black;
+  line-height: 20px;
+}
+
+.bubble-lilac {
+  background: #eee1f6;
+  color: #bd87dd;
+  font-weight: bolder;
+  border: 1px solid #eee1f6;
+  line-height: 20px;
+}
+
+.bubble-orange {
+  background: #ffcebf;
+  color: #ff6c3f;
+  border: 1px solid #ffcebf;
+  font-weight: bolder;
+  line-height: 20px;
+}
+
+.bubble-green {
+  background: #cff5cf;
+  color: #11d111;
+  border: 1px solid #cff5cf;
+  font-weight: bolder;
+  line-height: 20px;
+}

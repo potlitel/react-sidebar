@@ -6,10 +6,14 @@ import {
   useProSidebar,
 } from "react-pro-sidebar";
 import React, { useState } from "react";
+import Tooltip from "@mui/material/Tooltip";
+// import { Link as Linkk, animateScroll as scroll } from "react-scroll";
 // import Typography from "./Typography";
 
 import Home from "../../features/Home";
 import Dashboard from "../../features/Dashboard";
+import Transactions from "../../features/Transactions";
+import Invoices from "../../features/Invoices";
 // import PackageBadges from "./PackageBadges";
 // import { PackageBadges } from "./PackageBadges";
 
@@ -57,19 +61,27 @@ const Sidenav = () => {
     <div style={{ display: "flex", height: "100vh" }}>
       <Sidebar className="app" collapsed={menuCollapse}>
         <Menu>
-          <MenuItem
-            className="menu1"
-            icon={
-              <MenuRoundedIcon
-                onClick={() => {
-                  menuIconClick();
-                }}
-              />
-            }
-            component={<Link to="/" className="link" />}
+          <Tooltip
+            title="Zoom In"
+            arrow
+            placement="right"
+            hidden={menuCollapse ? true : false}
+            followCursor
           >
-            <h2> Home</h2>
-          </MenuItem>
+            <MenuItem
+              className="menu1"
+              icon={
+                <MenuRoundedIcon
+                  onClick={() => {
+                    menuIconClick();
+                  }}
+                />
+              }
+              component={<Link to="/" className="link" />}
+            >
+              <h2> Home</h2>
+            </MenuItem>
+          </Tooltip>
           <br />
           <MenuItem
             icon={<GridViewRoundedIcon />}
@@ -78,7 +90,13 @@ const Sidenav = () => {
             {" "}
             Dashboard{" "}
           </MenuItem>
-          <MenuItem icon={<ReceiptRoundedIcon />}> Invoices </MenuItem>
+          <MenuItem
+            icon={<ReceiptRoundedIcon />}
+            component={<Link to="invoices" className="link" />}
+          >
+            {" "}
+            Invoices{" "}
+          </MenuItem>
           <SubMenu label="Charts" icon={<BarChartRoundedIcon />}>
             <MenuItem icon={<TimelineRoundedIcon />}> Timeline Chart </MenuItem>
             <MenuItem icon={<BubbleChartRoundedIcon />}>Bubble Chart</MenuItem>
@@ -89,7 +107,12 @@ const Sidenav = () => {
             </MenuItem>
             <MenuItem icon={<SavingsRoundedIcon />}>Savings Wallet</MenuItem>
           </SubMenu>
-          <MenuItem icon={<MonetizationOnRoundedIcon />}>Transactions</MenuItem>
+          <MenuItem
+            icon={<MonetizationOnRoundedIcon />}
+            component={<Link to="transactions" className="link" />}
+          >
+            Transactions
+          </MenuItem>
           <SubMenu label="Settings" icon={<SettingsApplicationsRoundedIcon />}>
             <MenuItem icon={<AccountCircleRoundedIcon />}> Account </MenuItem>
             <MenuItem icon={<ShieldRoundedIcon />}> Privacy </MenuItem>
@@ -97,7 +120,6 @@ const Sidenav = () => {
               Notifications
             </MenuItem>
           </SubMenu>
-          <br />
           <br />
           <br />
           <br />
@@ -115,7 +137,8 @@ const Sidenav = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="dashboard" element={<Dashboard />} />
-          {/* <Route path="transactions" element={<Transactions />} /> */}
+          <Route path="transactions" element={<Transactions />} />
+          <Route path="invoices" element={<Invoices />} />
         </Routes>
       </main>
     </div>

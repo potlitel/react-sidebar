@@ -76,6 +76,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [react-pro-sidebar/storybook/Playground.tsx](https://github.com/azouaoui-med/react-pro-sidebar/blob/master/storybook/Playground.tsx)
 [react-pro-sidebar](https://www.npmjs.com/package/react-pro-sidebar)
 [How To Implement Smooth Scrolling in React](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react)
+[CodePen Home Basic React Dashboard Component](https://codepen.io/tinoMsakwa/pen/ZEBPRPM)
+[ The Icons](https://fontawesome.com/v4/icons/)
+[Icons](https://mui.com/material-ui/icons/)
+[Material Icons](https://mui.com/material-ui/material-icons/)
+[@mui/icons-material](https://www.npmjs.com/package/@mui/icons-material)
+[Material UI Icons in React](https://refine.dev/blog/mui-icons-in-react/)
+[How to Use Material UI (MUI) Icons in React](https://blog.wrappixel.com/how-to-use-mui-icons-in-react/)
+[react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid)
+[react-flexbox-grid-example](https://github.com/roylee0704/react-flexbox-grid-example)
+[Create responsive drawer menu with React + Material-UI.](https://medium.com/@tsubasakondo_36683/create-responsive-drawer-menu-with-react-material-ui-617a42764b69)
+[Responsive React Dashboard with Tailwind](https://codepen.io/dilums/pen/ZEBowxX)
 
 ### Userfull CLI commands
 
