@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Usefull Links
+
+[React-pro-sidebar: A Sidebar Menu](https://dhrubot.medium.com/react-pro-sidebar-a-sidebar-menu-519a5d6ebaab)
+[Simple Sidebars With React-Pro-Sidebar And Material UI](https://blog.openreplay.com/simple-sidebars-with-react-pro-sidebar-and-material-ui/)
+[react-pro-sidebar/storybook/Playground.tsx](https://github.com/azouaoui-med/react-pro-sidebar/blob/master/storybook/Playground.tsx)
+[react-pro-sidebar](https://www.npmjs.com/package/react-pro-sidebar)
+[How To Implement Smooth Scrolling in React](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react)
+
+### Userfull CLI commands
+
+npx create-react-app react-sidebar
+npx create-react-app react-sidebar --template typescript
