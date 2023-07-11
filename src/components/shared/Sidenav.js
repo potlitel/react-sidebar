@@ -48,6 +48,7 @@ import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 // import { GiAbstract050 } from "react-icons/gi";
 
 import { Routes, Route, Link } from "react-router-dom";
+import { width } from "@mui/system";
 
 const Sidenav = () => {
   //   menuCollapse state using useState hook
@@ -56,6 +57,14 @@ const Sidenav = () => {
   const menuIconClick = () => {
     //condition checking to change state from true to false and vice versa
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
+
+  const style3 = {
+    // height: "75px",
+    // display: "flex",
+    // justifyContent: "flex-end",
+    // alignItems: "flex-end",
+    width: "90%",
   };
 
   return (
@@ -131,11 +140,8 @@ const Sidenav = () => {
           <MenuItem icon={<LogoutRoundedIcon />}> Logout </MenuItem>
         </Menu>
       </Sidebar>
-      {/* <section>
-        <h1>WELCOME TO QUICKPAY</h1>
-      </section> */}
       <main>
-        <div class="parent">
+        <div className="parent">
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -148,15 +154,6 @@ const Sidenav = () => {
             <DarkModeToggle />
           </div>
         </div>
-        {/* <div class="containerr">
-          <div class="itemm">
-            <div>Left One</div>
-          </div>
-          <div class="divider"></div>
-          <div class="itemm">
-            <div>Right One</div>
-          </div>
-        </div> */}
       </main>
     </div>
   );

@@ -119,17 +119,20 @@
 /*---------------------------------------Respponsives Cards-----------------------------------------------*/
 :root {
   --cardWidth: 240px;
-  --cardHeight: 280px;
-  --cardMargin: 10px;
+  --cardHeight: 240px;
+  --cardMargin: 1px;
 }
 .main-section {
-  max-width: 100%;
-  margin: 0 auto;
+  /* max-width: 100%;
+  margin: 0 auto; */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   /* background: #bbb; */
-  gap: 5px;
+  /* gap: 5px; */
+  flex-direction: row;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 .card {
   width: var(--cardWidth);
@@ -203,11 +206,13 @@
 
 .parent {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 100%; */
 }
 
 .parent > div {
-  padding: 10px;
+  padding: 5px;
   /* background: grey; */
 }
 
