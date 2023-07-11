@@ -91,6 +91,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [use-dark-mode](https://github.com/donavon/use-dark-mode)
 [useDarkMode demo](https://codesandbox.io/s/mzj64x80ny?file=/src/App.js:261-269)
 [](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
+[justify-content](https://css-tricks.com/almanac/properties/j/justify-content/)
 
 ### Userfull CLI commands
 
