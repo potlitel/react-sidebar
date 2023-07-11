@@ -1,8 +1,8 @@
 import { Typography } from "../components/shared/Typography";
 // import { Grid, Row, Col } from "react-flexbox-grid";
 import TaskProfile from "../components/shared/TaskProfile";
-import Grid from "@mui/material/Grid";
-import { Box } from "@mui/material";
+// import Grid from "@mui/material/Grid";
+// import { Box } from "@mui/material";
 // import Stack from "@mui/material/Stack";
 const Dashboard = () => {
   return (
@@ -15,10 +15,9 @@ const Dashboard = () => {
           React Pro Sidebar provides a set of components for creating high level
           and customizable side navigation
         </Typography>
-        {/* <PackageBadges /> */}
       </div>
-      <div style={{ width: "100%" }}>
-        {/* <Grid
+      {/* <div style={{ width: "100%" }}> */}
+      {/* <Grid
           container
           spacing={0}
           align="center"
@@ -57,7 +56,7 @@ const Dashboard = () => {
             </i>
           </Grid>
         </Grid> */}
-        <Grid container direction="row" spacing="1" alignItems="right">
+      {/* <Grid container direction="row" spacing="1" alignItems="right">
           <Grid item container direction="column">
             <TaskProfile
               date="May 21"
@@ -82,8 +81,72 @@ const Dashboard = () => {
               comments="6"
             />
           </Grid>
-        </Grid>
+        </Grid> */}
+      <div className="main-section">
+        <div className="card">
+          <TaskProfile
+            date="May 21"
+            task="Invoice Research"
+            edits="58"
+            comments="60"
+          />
+        </div>
+        <div className="card">
+          <TaskProfile
+            date="Jan 03"
+            task="Personal Research"
+            edits="4"
+            comments="6"
+          />
+        </div>
+        <div className="card">
+          <TaskProfile
+            date="Nov 03"
+            task="Transactions Research"
+            edits="14"
+            comments="26"
+          />
+        </div>
+        <div className="card">
+          <TaskProfile
+            date="Feb 23"
+            task="Wallets Research"
+            edits="17"
+            comments="81"
+          />
+        </div>
       </div>
+      {/* <h1>Responsive Card</h1>
+      <div class="wrapper">
+        <div class="card">
+          <h3 class="card-title">CARD TITLE</h3>
+          <p class="card-content">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+          <button class="card-btn">READ MORE</button>
+        </div>
+        <div class="card">
+          <h3 class="card-title">CARD TITLE</h3>
+          <p class="card-content">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+          <button class="card-btn">READ MORE</button>
+        </div>
+        <div class="card">
+          <h3 class="card-title">CARD TITLE</h3>
+          <p class="card-content">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+          <button class="card-btn">READ MORE</button>
+        </div>
+      </div> */}
+      {/* </div> */}
     </div>
   );
 };

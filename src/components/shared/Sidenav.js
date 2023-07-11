@@ -14,6 +14,7 @@ import Home from "../../features/Home";
 import Dashboard from "../../features/Dashboard";
 import Transactions from "../../features/Transactions";
 import Invoices from "../../features/Invoices";
+import DarkModeToggle from "./DarkModeToggle";
 // import PackageBadges from "./PackageBadges";
 // import { PackageBadges } from "./PackageBadges";
 
@@ -34,17 +35,17 @@ import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 
 //icons from react icons
-import { FaList, FaRegHeart } from "react-icons/fa";
-import {
-  FiHome,
-  FiLogOut,
-  FiArrowLeftCircle,
-  FiArrowRightCircle,
-} from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
-import { SiApacheairflow } from "react-icons/si";
-import { GiAbstract050 } from "react-icons/gi";
+// import { FaList, FaRegHeart } from "react-icons/fa";
+// import {
+//   FiHome,
+//   FiLogOut,
+//   FiArrowLeftCircle,
+//   FiArrowRightCircle,
+// } from "react-icons/fi";
+// import { RiPencilLine } from "react-icons/ri";
+// import { BiCog } from "react-icons/bi";
+// import { SiApacheairflow } from "react-icons/si";
+// import { GiAbstract050 } from "react-icons/gi";
 
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -61,27 +62,27 @@ const Sidenav = () => {
     <div style={{ display: "flex", height: "100vh" }}>
       <Sidebar className="app" collapsed={menuCollapse}>
         <Menu>
-          <Tooltip
+          {/* <Tooltip
             title="Zoom In"
             arrow
             placement="right"
             hidden={menuCollapse ? true : false}
             followCursor
+          > */}
+          <MenuItem
+            className="menu1"
+            icon={
+              <MenuRoundedIcon
+                onClick={() => {
+                  menuIconClick();
+                }}
+              />
+            }
+            component={<Link to="/" className="link" />}
           >
-            <MenuItem
-              className="menu1"
-              icon={
-                <MenuRoundedIcon
-                  onClick={() => {
-                    menuIconClick();
-                  }}
-                />
-              }
-              component={<Link to="/" className="link" />}
-            >
-              <h2> Home</h2>
-            </MenuItem>
-          </Tooltip>
+            <h2> Home</h2>
+          </MenuItem>
+          {/* </Tooltip> */}
           <br />
           <MenuItem
             icon={<GridViewRoundedIcon />}
@@ -134,12 +135,28 @@ const Sidenav = () => {
         <h1>WELCOME TO QUICKPAY</h1>
       </section> */}
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="transactions" element={<Transactions />} />
-          <Route path="invoices" element={<Invoices />} />
-        </Routes>
+        <div class="parent">
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="transactions" element={<Transactions />} />
+              <Route path="invoices" element={<Invoices />} />
+            </Routes>
+          </div>
+          <div>
+            <DarkModeToggle />
+          </div>
+        </div>
+        {/* <div class="containerr">
+          <div class="itemm">
+            <div>Left One</div>
+          </div>
+          <div class="divider"></div>
+          <div class="itemm">
+            <div>Right One</div>
+          </div>
+        </div> */}
       </main>
     </div>
   );

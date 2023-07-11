@@ -87,6 +87,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [react-flexbox-grid-example](https://github.com/roylee0704/react-flexbox-grid-example)
 [Create responsive drawer menu with React + Material-UI.](https://medium.com/@tsubasakondo_36683/create-responsive-drawer-menu-with-react-material-ui-617a42764b69)
 [Responsive React Dashboard with Tailwind](https://codepen.io/dilums/pen/ZEBowxX)
+[CodePen Home Responsive Cards with flexbox flex-wrap](https://codepen.io/gaaamii/pen/yLeEvbQ)
+[use-dark-mode](https://github.com/donavon/use-dark-mode)
+[useDarkMode demo](https://codesandbox.io/s/mzj64x80ny?file=/src/App.js:261-269)
+[](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
 
 ### Userfull CLI commands
 

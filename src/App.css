@@ -116,3 +116,110 @@
     overflow: hidden;
   }
 }
+/*---------------------------------------Respponsives Cards-----------------------------------------------*/
+:root {
+  --cardWidth: 240px;
+  --cardHeight: 280px;
+  --cardMargin: 10px;
+}
+.main-section {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* background: #bbb; */
+  gap: 5px;
+}
+.card {
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  background: #fff;
+  box-sizing: border-box;
+}
+/*---------------------------------------Another Respponsives Cards---------------------------------------*/
+/* .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 300px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
+    rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+.card:nth-child(2) {
+  background: #4181ee;
+}
+.card:last-child {
+  background: #673ab7;
+}
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.card-content {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.card-btn {
+  all: unset;
+  display: block;
+  margin-left: auto;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.card-btn:hover {
+  color: #02b875;
+  background: #fff;
+}
+.card:nth-child(2) .card-btn:hover {
+  color: #4181ee;
+  background: #fff;
+}
+.card:last-child .card-btn:hover {
+  color: #673ab7;
+  background: #fff;
+} */
+
+.parent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parent > div {
+  padding: 10px;
+  /* background: grey; */
+}
+
+.containerr {
+  display: flex;
+  flex-direction: row;
+}
+.itemm {
+  display: flex;
+  flex-shrink: 0;
+}
+.divider {
+  display: flex;
+  flex: 1;
+}
